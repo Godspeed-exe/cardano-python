@@ -58,7 +58,7 @@ def generateKey(account,address, txBuilder):
 
             commands = []
             commands.append("cardano-address")
-            commands.append("key")
+            commands.append(" ")
             commands.append("public")
             commands.append("--with-chain-code")
             output = subprocess.check_output(commands, stdin=ps.stdout)
